@@ -12,13 +12,14 @@ class ViewController: UIViewController
 {
     
     @IBOutlet var input_TextField: UITextField!
-
     @IBOutlet var answer_Label: UILabel!
     
+    //Everytime the button is tapped, a new random number is generated.
     @IBAction func submit_Button(sender: AnyObject)
     {
-        //Generate a random number from 0 through N-1
-        var randomNumber:Int = Int(arc4random_uniform(6))
+        //Generate a random number from 0 through n-1
+        let randomNumber:Int = Int(arc4random_uniform(6))
+        print("Random number generated: \(randomNumber)")
         
         let userInput = Int (input_TextField.text!)!
         
@@ -28,6 +29,7 @@ class ViewController: UIViewController
         } else {
             answer_Label.text = "You're wrong!"
         }
+        print("Finished with operation")
         
     }
     
