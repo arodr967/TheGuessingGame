@@ -8,8 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    
+    @IBOutlet var input_TextField: UITextField!
 
+    @IBOutlet var answer_Label: UILabel!
+    
+    
+    @IBAction func submit_Button(sender: AnyObject)
+    {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
