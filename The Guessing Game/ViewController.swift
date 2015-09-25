@@ -31,6 +31,10 @@ class ViewController: UIViewController
         }
         print("Finished with operation")
         
+        //To-do:
+        //Check if the user indeed put a number between 0 through 5
+        //Check if the user did not put any number
+        
     }
     
     override func viewDidLoad() {
