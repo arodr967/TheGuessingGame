@@ -27,7 +27,7 @@ class ViewController: UIViewController
         {
             answer_Label.text = "You're right!"
         } else {
-            answer_Label.text = "You're wrong!"
+            answer_Label.text = "You're wrong! It was \(randomNumber)"
         }
         print("Finished with operation")
         
